@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    //Se declara variable para controlar la velocidad con la que se moverá el jugador (el objeto llamado player)
     public float speed = 5f;
+    //Se declara variable para controlar 
     private Rigidbody playerRB;
+    //
     private float zBound = 6.0f;
 
     // Start is called before the first frame update
     void Start()
     {
+        //Se manda a llamar el componente llamado Rigidbody 
         playerRB = GetComponent<Rigidbody>();
     }
 
